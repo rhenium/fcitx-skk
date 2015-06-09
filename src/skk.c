@@ -433,7 +433,7 @@ FcitxSkkCreate(FcitxInstance *instance)
         return NULL;
     }
     skk_context_set_period_style(skk->context, SKK_PERIOD_STYLE_JA_JA);
-    skk_context_set_input_mode(skk->context, SKK_INPUT_MODE_HIRAGANA);
+    skk_context_set_input_mode(skk->context, SKK_INPUT_MODE_LATIN);
 
     FcitxSkkApplyConfig(skk);
 
