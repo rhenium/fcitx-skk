@@ -514,9 +514,8 @@ FcitxSkkInit(void *arg)
     FcitxSkk *skk = (FcitxSkk*)arg;
     if (!arg)
         return false;
-    FcitxInstanceSetContext(skk->owner, CONTEXT_IM_KEYBOARD_LAYOUT, "ja");
     boolean flag = true;
-    FcitxInstanceSetContext(skk->owner, CONTEXT_IM_KEYBOARD_LAYOUT, "jp");
+    // FcitxInstanceSetContext(skk->owner, CONTEXT_IM_KEYBOARD_LAYOUT, "jp");
     FcitxInstanceSetContext(skk->owner, CONTEXT_DISABLE_AUTOENG, &flag);
     FcitxInstanceSetContext(skk->owner, CONTEXT_DISABLE_QUICKPHRASE, &flag);
     FcitxInstanceSetContext(skk->owner, CONTEXT_DISABLE_FULLWIDTH, &flag);
